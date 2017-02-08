@@ -59,7 +59,8 @@ context.closePath();
 //Note Français
 context.beginPath();
 context.fillStyle = "black";
-context.fillText("Français : " + noteFr, 18, graphBase + 12);
+context.font = "12px 'Fjalla One'";
+context.fillText("Français : " + noteFr, 17, graphBase + 14);
 context.closePath();
 
 
@@ -73,7 +74,7 @@ context.closePath();
 //Note Maths
 context.beginPath();
 context.fillStyle = "black";
-context.fillText("Maths : " + noteMath, 173, graphBase + 12);
+context.fillText("Maths : " + noteMath, 175, graphBase + 14);
 context.closePath();
 
 //Graph Histoire
@@ -85,13 +86,14 @@ context.closePath();
 //Note Histoire
 context.beginPath();
 context.fillStyle = "black";
-context.fillText("Histoire : " + noteHist, 330, graphBase + 12);
+context.fillText("Histoire : " + noteHist, 330, graphBase + 14);
 context.closePath();
 
 //Moyenne
 context.beginPath();
-context.fillStyle = "black";
-context.fillText("Moyenne : " + moyenne, 160, graphBase + 25);
+context.fillStyle = coulGraph(moyenne);
+context.font = "12px 'Fjalla One'";
+context.fillText("Moyenne : " + moyenne, 162, graphBase + 27);
 context.closePath();
 
 
