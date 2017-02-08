@@ -24,15 +24,19 @@ body{
 }
 
 #canvas{
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid rgba(0, 0, 0, 0.3);
     background-color: white;
 }
 
-#bAffCach{
+#dispHide{
     margin-left: auto;
     margin-right: auto;
     display: block;
     font-family: 'Fjalla One', sans-serif;
 }
+
+
 
 

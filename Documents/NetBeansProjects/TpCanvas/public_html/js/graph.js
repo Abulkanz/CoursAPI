@@ -4,7 +4,7 @@ var bAffCach = document.getElementById("dispHide");
 var noteFr = document.getElementById("noteFr").innerText;
 var noteMath = document.getElementById("noteMath").innerText;
 var noteHist = document.getElementById("noteHist").innerText;
-var moyenne = Math.round((parseFloat(noteFr) + parseFloat(noteMath) + parseFloat(noteHist))) / 3;
+var moyenne = (parseFloat(noteFr) + parseFloat(noteMath) + parseFloat(noteHist)) / 3;
 moyenne = moyenne.toFixed(2);
 var ratioKane = 13.5;
 
