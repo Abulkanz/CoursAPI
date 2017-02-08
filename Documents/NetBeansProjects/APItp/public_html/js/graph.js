@@ -8,7 +8,6 @@ var moyenne = (parseFloat(noteFr) + parseFloat(noteMath) + parseFloat(noteHist))
 moyenne = moyenne.toFixed(2);
 var ratioKane = 13.5;
 
-
 //Mise à l'echelle des notes
 var graphFr = noteFr * ratioKane;
 var graphMath = noteMath * ratioKane;
@@ -20,6 +19,23 @@ context.beginPath();
 context.moveTo(0, graphBase);
 context.lineTo(400, graphBase);
 context.stroke();
+context.closePath();
+
+//Repères
+context.beginPath();
+context.save();
+context.moveTo(0, graphBase-5*ratioKane);
+context.lineTo(400, graphBase-5*ratioKane);
+context.strokeStyle = "rgba(0, 0, 0, 0.1)";
+context.stroke();
+context.closePath();
+
+context.beginPath();
+context.moveTo(0, graphBase-15*ratioKane);
+context.lineTo(400, graphBase-15*ratioKane);
+context.strokeStyle = "rgba(0, 0, 0, 0.1)";
+context.stroke();
+context.restore();
 context.closePath();
 
 //Temoin de la moyenne

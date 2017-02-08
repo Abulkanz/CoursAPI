@@ -13,27 +13,29 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-            <h1>Statistiques Toto</h1>
-        </header>
-        <table id="bulletin">
-            <tr id="titreT">
-                <td colspan="3">Notes Toto</td></tr>
-            <tr>
-                <th>Français</th>
-                <th>Maths</th>
-                <th>Histoire</th>
-            </tr>
-            <tr id="notes">
-                <td id="noteFr">6</td>
-                <td id="noteMath">14</td>
-                <td id="noteHist">9</td>
-            </tr>
-        </table>
-        <hr>
-        <button type="button" id="dispHide">Afficher/Cacher</button>
-        <br>
-        <canvas id="canvas" width="400" height="300"></canvas>
-        <script src="js/graph.js" type="text/javascript"></script>
+        <div class="conteneur">
+            <header>
+                <h1>Statistiques Toto</h1>
+            </header>
+            <table id="bulletin">
+                <tr id="titreT">
+                    <td colspan="3">Notes Toto</td></tr>
+                <tr>
+                    <th>Français</th>
+                    <th>Maths</th>
+                    <th>Histoire</th>
+                </tr>
+                <tr id="notes">
+                    <td id="noteFr">6</td>
+                    <td id="noteMath">14</td>
+                    <td id="noteHist">9</td>
+                </tr>
+            </table>
+            <hr>
+            <button type="button" id="dispHide">Afficher/Cacher</button>
+            <hr>
+            <canvas id="canvas" width="400" height="300"></canvas>
+            <script src="js/graph.js" type="text/javascript"></script>
+        </div>
     </body>
 </html>
